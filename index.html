@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MPOUCK Jho Chadrack | Laboratoire</title>
+  <title>Centre spécial de recherche et création digitale</title>
   
   <link rel="canonical" href="https://mpouckjhochadrack.github.io/">
   
-<meta property="og:title" content="MPOUCK Jho Chadrack | Projets, Recherche, Web & Innovation">
+<meta property="og:title" content="Centre spécial  de recherche et de création digitale">
 
-<meta property="og:description" content="Bienvenue sur ESRCD, un espace personnel dédié aux projets web, à la recherche, à l’innovation digitale, au contenu et aux expérimentations créatives.">
+<meta property="og:description" content="Bienvenue sur CSRCD, un espace personnel dédié aux projets web, à la recherche, à l’innovation digitale, au contenu et aux expérimentations créatives.">
 
 <meta property="og:image" content="https://mpouckjhochadrack.github.io/image2.png">
 
@@ -19,16 +19,16 @@
 
 <meta name="twitter:card" content="summary_large_image">
 
-<meta name="twitter:title" content="MPOUCK Jho Chadrack | Projets, Recherche, Web & Innovation">
+<meta name="twitter:title" content="centre spécial de recherche et de création digitale">
 
-<meta name="twitter:description" content="Bienvenue sur MPOUCK Jho Chadrack Laboratoire, un espace personnel dédié aux projets web, à la recherche, à l’innovation digitale, au contenu et aux expérimentations créatives.">
+<meta name="twitter:description" content="Bienvenue sur CSRCD, un espace personnel dédié aux projets web, à la recherche, à l’innovation digitale, au contenu et aux expérimentations créatives.">
 
 <meta name="twitter:image" content="https://mpouckjhochadrack.github.io/image2.png">
 
     <!-- Meta description pour SEO -->
- <meta name="description" content="Bienvenue sur MPOUCK Jho Chadrack Laboratoire, un espace personnel dédié aux projets web, à la recherche, à l’innovation digitale, au contenu et aux expérimentations créatives.">
+ <meta name="description" content="Bienvenue sur CSRCD, un espace personnel dédié aux projets web, à la recherche, à l’innovation digitale, au contenu et aux expérimentations créatives.">
  
-  <meta name="keywords" content="MPOUCK Jho Chadrack, laboratoire personnel, projets web, innovation digitale, recherche numérique, portfolio, blog">
+  <meta name="keywords" content="CSRCD, laboratoire personnel, projets web, innovation digitale, recherche numérique, portfolio, blog">
   
   <link rel="icon" type="image/png" href="favicon.png">
   
@@ -1462,7 +1462,7 @@
     .social-link:hover { background: var(--social-bg-h); color: var(--text-dark); transform: translateY(-2px); }
 
     /* Colonnes liens */
-    .footer-col h4 {
+    .footer-col h3, h4 {
       font-size: .82rem; font-weight: 700; letter-spacing: .03em;
       text-transform: uppercase; color: white; margin-bottom: 18px;
       transition: color .35s ease;
@@ -1531,6 +1531,90 @@
       .footer-legal { flex-wrap: wrap; gap: 12px; }
     }
 
+    /* ══════════════════════════════════════════
+       ⑤ NEWSLETTER
+    ══════════════════════════════════════════ */
+    .newsletter-section {
+      padding: 80px 0;
+      background: var(--bg-page);
+      transition: background .35s ease;
+    }
+
+    .newsletter-inner {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 32px;
+    }
+
+    .newsletter-card {
+      background: var(--bg-card);
+      border-radius: 24px;
+      border: 1px solid var(--border-nav);
+      box-shadow: var(--shadow-card);
+      padding: 56px 60px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center;
+      transition: background .35s ease, box-shadow .35s ease, border-color .35s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .newsletter-card::before {
+      content: '';
+      position: absolute;
+      top: -60px; right: -60px;
+      width: 300px; height: 300px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(200,210,255,.18) 0%, transparent 70%);
+      pointer-events: none;
+      transition: background .35s ease;
+    }
+    [data-theme="dark"] .newsletter-card::before {
+      background: radial-gradient(circle, rgba(100,120,255,.08) 0%, transparent 70%);
+    }
+
+    .newsletter-badge {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-size: .72rem; font-weight: 600; letter-spacing: .06em;
+      text-transform: uppercase; color: var(--text-muted);
+      background: var(--social-bg); padding: 5px 13px;
+      border-radius: 999px; margin-bottom: 20px;
+      transition: background .35s ease, color .35s ease;
+    }
+
+    .newsletter-title {
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      font-weight: 800; letter-spacing: -.03em; line-height: 1.15;
+      color: var(--text-dark); margin-bottom: 16px;
+      transition: color .35s ease;
+    }
+
+    .newsletter-desc {
+      font-size: .9rem; line-height: 1.75;
+      color: var(--text-muted);
+      transition: color .35s ease;
+    }
+
+    /* Surcharge du widget MailerLite pour s'harmoniser avec le thème */
+    .newsletter-form-wrap .ml-embedded {
+      width: 100%;
+    }
+
+    /* Responsive newsletter */
+    @media (max-width: 760px) {
+      .newsletter-card {
+        grid-template-columns: 1fr;
+        padding: 40px 32px;
+        gap: 32px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .newsletter-inner { padding: 0 20px; }
+      .newsletter-card { padding: 32px 24px; }
+    }
+
   </style>
   
 </head>
@@ -1544,7 +1628,7 @@
     <div class="navbar">
 
       <!-- [CONFIG] Logo texte -->
-      <a href="https://mpouckjhochadrack.github.io/" class="nav-logo">ESRCD</a>
+      <a href="https://mpouckjhochadrack.github.io/" class="nav-logo">CSRCD</a>
 
       <!-- [CONFIG] Liens desktop -->
       <ul class="nav-links" role="list">
@@ -1560,14 +1644,14 @@
           </button>
           <div class="nav-drop-panel" id="pagesPanel" role="menu">
             <a href="#"     role="menuitem"><span class="page-icon">👤</span> A propos de nous</a>
-            <a href="#" role="menuitem"><span class="page-icon">🖼️</span> Projets</a>
+            <a href="pages/projet.html" role="menuitem"><span class="page-icon">🖼️</span> Projets</a>
             <div class="sep"></div>
             <a href="#blog"      role="menuitem"><span class="page-icon">✍️</span> Blog</a>
           <!--  <a href="contact.html"   role="menuitem"><span class="page-icon">✉️</span> Contact</a>  -->
           </div>
         </li>
 
-        <li><a href="#">Catégories</a></li>
+        <li><a href="#services">Catégories</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
 
@@ -1595,7 +1679,7 @@
           </span>
         </button>
 
-        <a href="#" class="nav-cta">Nos Projets</a>
+        <a href="pages/projet.html" class="nav-cta">Nos Projets</a>
 
         <button class="hamburger" id="hamburger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobileMenu">
           <span></span><span></span><span></span>
@@ -1628,10 +1712,10 @@
             </div>
           </div>
         </li>
-        <li><a href="#" role="menuitem">Catégories</a></li>
+        <li><a href="#services" role="menuitem">Catégories</a></li>
         <li><a href="contact.html"    role="menuitem">Contact</a></li>
       </ul>
-      <a href="#" class="mob-cta" role="menuitem">Nos Projets</a>
+      <a href="pages/projet.html" class="mob-cta" role="menuitem">Nos Projets</a>
     </div>
   </nav>
 
@@ -1686,7 +1770,7 @@
 
         <!-- [CONFIG] Titre -->
         <h1 class="hero-title">
-          Espace spécial<em class="spark"> ✦</em><br>de recherche <br> et de création digitale.
+          Centre spécial<em class="spark"> ✦</em><br>de recherche <br> et de création digitale.
         </h1>
 
         <!-- [CONFIG] Sous-titre -->
@@ -1696,13 +1780,14 @@
 
         <!-- [CONFIG] Boutons -->
         <div class="hero-actions">
-          <a href="#" class="btn-primary">
+          <a href="pages/projet.html" class="btn-primary">
             Nos projets 
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
               <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
             </svg>
           </a>
-          <a href="#" class="btn-secondary">Découvrir</a>
+          <a href="#services
+          " class="btn-secondary">Découvrir</a>
         </div>
 
         <!-- [CONFIG] Stats -->
@@ -1730,7 +1815,7 @@
         -->
         <img
           src="images/image2.png"
-          alt="Page d'accueil de la plateforme MPOUCK Digitales solutions.png"
+          alt="Page d'accueil du Centre spécial de recherche et de création digitale"
           class="hero-person"
           loading="eager"
         />
@@ -1925,7 +2010,7 @@
             </div>
           </div>
           <div class="svc-body">
-            <h3 class="svc-name">Éducation & Culture</h3>
+            <h2 class="svc-name">Éducation & Culture</h2>
             <p class="svc-desc">
               Un espace consacré à l’apprentissage, à la transmission du savoir et au développement intellectuel. Vous y trouverez des contenus pensés pour mieux comprendre, progresser et enrichir vos connaissances dans différents domaines essentiels
             </p>
@@ -1946,7 +2031,7 @@
             </div>
           </div>
           <div class="svc-body">
-            <h3 class="svc-name">Innovation et technologie</h3>
+            <h2 class="svc-name">Innovation et technologie</h2>
             <p class="svc-desc">
               Explorez des idées nouvelles, des projets créatifs et des approches tournées vers l’avenir. Cette catégorie rassemble des réflexions, des expérimentations et des initiatives inspirées par la modernité, la créativité et la transformation digitale.
             </p>
@@ -1968,7 +2053,7 @@
             </div>
           </div>
           <div class="svc-body">
-            <h3 class="svc-name">Analyse et Réflexion</h3>
+            <h2 class="svc-name">Analyse et Réflexion</h2>
             <p class="svc-desc">
               Des analyses, des questionnements et des pistes de pensée pour mieux comprendre le monde et soi-même. Ici, les idées prennent forme à travers des observations, des interprétations et des réflexions sur les réalités de notre temps.
             </p>
@@ -1989,7 +2074,7 @@
             </div>
           </div>
           <div class="svc-body">
-            <h3 class="svc-name">Économie & Finance</h3>
+            <h class="svc-name">Économie & Finance</h2>
             <p class="svc-desc">
               Une catégorie dédiée à la compréhension de l’argent, de la gestion financière et des mécanismes économiques du quotidien. Vous y découvrirez des contenus utiles pour mieux gérer vos ressources, développer votre culture financière et penser l’avenir avec plus de clarté.
             </p>
@@ -2010,7 +2095,7 @@
             </div>
           </div>
           <div class="svc-body">
-            <h3 class="svc-name">Web & Internet</h3>
+            <h class="svc-name">Web & Internet</h2>
             <p class="svc-desc">
               Une catégorie consacrée aux usages du web, aux plateformes numériques et aux transformations qui façonnent l’univers en ligne. Vous y découvrirez des contenus liés aux outils digitaux, à la présence sur Internet et aux évolutions du monde connecté.
             </p>
@@ -2022,7 +2107,7 @@
 
       <!-- Bouton découvrir plus -->
       <div class="services-more">
-        <a href="#" class="btn-outline-more">
+        <a href="#servic" class="btn-outline-more">
           Toutes les catégories 
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
@@ -2045,17 +2130,17 @@
             Voir le monde<br>sous le prisme <span>d'un autre oeil</span>
           </h2>
           <p class="cta-desc">
-            L'Espace spécial de recherche et de création digitale a été créée pour partager les savoirs indispensables et les productions fondamentales de MPOUCK jho Chadrack.
+            Le Centre spécial de recherche et de création digitale a été créée pour partager les savoirs indispensables et les productions fondamentales de MPOUCK jho Chadrack.
           </p>
         </div>
         <div class="cta-actions">
-          <a href="#" class="btn-cta-primary">
-            Allez-y maintenant !
+          <a href="#blog" class="btn-cta-primary">
+            Découvrir notre blog !
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
               <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
             </svg>
           </a>
-          <a href="#" class="btn-cta-ghost">
+          <a href="#services" class="btn-cta-ghost">
             Voir tous les services
             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
@@ -2076,19 +2161,19 @@
           <p class="blog-eyebrow">Notre Blog</p>
           <h2 class="blog-title">Les derniers <span class="accent">articles</span></h2>
         </div>
-        <a href="#" class="blog-see-all">Voir tous les articles <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        <a href="blog.html" class="blog-see-all">Voir tous les articles <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
       </div>
       <div class="blog-grid">
 
         <!-- [CONFIG] Article 1 -->
         <article class="blog-card">
           <div class="blog-img-wrap">
-            <img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=600&q=80&fit=crop" alt="UI/UX Trends" class="blog-img" loading="lazy"/>
+            <img src="images/Comment briser les liens de la pauvreté pour devenir riche en Afrique.jpg" alt="UI/UX Trends" class="blog-img" loading="lazy"/>
           </div>
           <div class="blog-body">
-            <span class="blog-cat">Design</span>
-            <h3 class="blog-art-title">Les tendances UI/UX qui vont dominer 2025</h3>
-            <p class="blog-excerpt">Entre minimalisme radical, bento grids et interfaces dopées à l'IA, le design évolue plus vite que jamais. Tour d'horizon des tendances incontournables.</p>
+            <span class="blog-cat">Éducation & Culture</span>
+            <h2 class="blog-art-title">Comment briser les liens de la pauvreté pour devenir riche en Afrique</h2>
+            <p class="blog-excerpt">Dans le continent africain, il y a un nombre incalculable de gens qui avalent chaque jour la poussière de la terre pour survivre. Cependant, rares sont ceux qui reconnaissent humblement cet état. C'est pour cette raison qu'ils travaillent durent, essaient tout, mais vivent toute leur vie au bord du désespoir. Dans cet article, vous allez découvrir comment quitter pour toujours le lit de la misère en Afrique.</p>
             <div class="blog-meta">
               <img src="#" alt="Auteur" class="blog-avatar"/>
               <div class="blog-author-info">
@@ -2111,7 +2196,7 @@
           </div>
           <div class="blog-body">
             <span class="blog-cat">Intelligence Artificielle</span>
-            <h3 class="blog-art-title">Comment l'IA transforme la création de contenu en 2025</h3>
+            <h class="blog-art-title">Comment l'IA transforme la création de contenu en 2025</h2>
             <p class="blog-excerpt">ChatGPT, Midjourney, Sora… Les outils IA redéfinissent la façon dont les entrepreneurs créent, automatisent et scalent leur contenu digital.</p>
             <div class="blog-meta">
               <img src="#" alt="Auteur" class="blog-avatar"/>
@@ -2135,7 +2220,7 @@
           </div>
           <div class="blog-body">
             <span class="blog-cat">Business</span>
-            <h3 class="blog-art-title">5 raisons d'utiliser un template pro plutôt que coder from scratch</h3>
+            <h2 class="blog-art-title">5 raisons d'utiliser un template pro plutôt que coder from scratch</h2>
             <p class="blog-excerpt">Gain de temps, coûts réduits, design validé… Pourquoi les entrepreneurs malins choisissent des templates premium pour lancer leur site rapidement.</p>
             <div class="blog-meta">
               <img src="#" alt="Auteur" class="blog-avatar"/>
@@ -2159,7 +2244,7 @@
           </div>
           <div class="blog-body">
             <span class="blog-cat">SEO &amp; Contenu</span>
-            <h3 class="blog-art-title">SEO en 2026 : ce qui fonctionne encore (et ce qui est mort)</h3>
+            <h2 class="blog-art-title">SEO en 2026 : ce qui fonctionne encore (et ce qui est mort)</h2>
             <p class="blog-excerpt">GEO, E-E-A-T, keyword stuffing… Le référencement naturel a radicalement changé. Voici les stratégies qui font vraiment la différence aujourd'hui.</p>
             <div class="blog-meta">
               <img src="#" alt="Auteur" class="blog-avatar"/>
@@ -2183,7 +2268,7 @@
           </div>
           <div class="blog-body">
             <span class="blog-cat">Intelligence Artificielle</span>
-            <h3 class="blog-art-title">L'IA peut-elle vraiment remplacer un UX designer ? La réponse en 2026</h3>
+            <h2 class="blog-art-title">L'IA peut-elle vraiment remplacer un UX designer ? La réponse en 2026</h2>
             <p class="blog-excerpt">Wireframes en un clic, tests automatisés, copy optimisé… L'IA s'invite partout dans le design. Peut-elle vraiment remplacer un designer humain ?</p>
             <div class="blog-meta">
               <img src="#" alt="Auteur" class="blog-avatar"/>
@@ -2207,7 +2292,7 @@
           </div>
           <div class="blog-body">
             <span class="blog-cat">Formation &amp; Carrière</span>
-            <h3 class="blog-art-title">Les compétences digitales les plus demandées en 2026</h3>
+            <h2 class="blog-art-title">Les compétences digitales les plus demandées en 2026</h2>
             <p class="blog-excerpt">IA, data analytics, cybersécurité, no-code… Les 10 compétences que les entreprises recherchent le plus et comment les acquérir rapidement.</p>
             <div class="blog-meta">
               <img src="#" alt="Auteur" class="blog-avatar"/>
@@ -2229,6 +2314,40 @@
   </section>
 
   <!-- ══════════════════════════════════════════
+       ⑤ NEWSLETTER (MailerLite)
+  ══════════════════════════════════════════ -->
+  <section class="newsletter-section" id="newsletter">
+    <div class="newsletter-inner">
+      <div class="newsletter-card">
+        <div class="newsletter-text">
+          <span class="newsletter-badge">
+            <svg width="8" height="8" viewBox="0 0 10 10" fill="currentColor"><circle cx="5" cy="5" r="5"/></svg>
+            Newsletter
+          </span>
+          <h2 class="newsletter-title">Restez informé,<br>chaque semaine.</h2>
+          <p class="newsletter-desc">
+            Rejoignez des centaines de lecteurs et recevez chaque semaine les meilleures ressources, analyses et réflexions du CSRCD directement dans votre boîte mail.
+          </p>
+        </div>
+        <div class="newsletter-form-wrap">
+          <!-- MailerLite Embedded Form -->
+          <div class="ml-embedded" data-form="ldC2t2"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MailerLite Universal -->
+  <script>
+    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+    ml('account', '2248624');
+  </script>
+  <!-- End MailerLite Universal -->
+
+  <!-- ══════════════════════════════════════════
        ⑥ FOOTER      ⑥ FOOTER
   ══════════════════════════════════════════ -->
   <footer class="footer-wrapper" id="contact" role="contentinfo">
@@ -2237,24 +2356,24 @@
 
         <!-- Col 1 : Brand -->
         <div class="footer-brand">
-          <a href="https://mpouckjhochadrack.github.io/" class="footer-logo" aria-label="Accueil MPOUCK">
+          <a href="https://mpouckjhochadrack.github.io/" class="footer-logo" aria-label="Accueil CSRCD">
             <!--
             [CONFIG] Logo — remplacez src par ./assets/logo.png
             Image carrée recommandée (sera rognée en cercle)
             -->
             <img
               src="#"
-              alt="MPOUCK logo"
+              alt="CSRCD logo"
               class="footer-logo-img"
               width="40" height="40"
             />
             <!-- [CONFIG] Nom du site -->
-            <span class="footer-logo-name">MPOUCK</span>
+            <span class="footer-logo-name">CSRCD</span>
           </a>
 
           <!-- [CONFIG] Description -->
           <p class="footer-desc">
-           Depuis 2026, nous révélons le potentiel des entreprises grâce à des solutions innovantes conçues pour une transformation durable et ambitieuse.
+           Centre spécial de recherche et de création digitale.
           </p>
 
           <!-- [CONFIG] Réseaux sociaux -->
@@ -2288,15 +2407,13 @@
         <!-- Col 2 : Quick Links -->
         <!-- [CONFIG] -->
         <div class="footer-col">
-          <h4>Liens rapides</h4>
+          <h3>Liens rapides</h3>
           <ul>
             <li><a href="#">À propos de nous</a></li>
             <li><a href="#">Nos Services</a></li>
-            <li><a href="#">Nos projets</a></li>
-            <li><a href="#">Nos Services</a></li>
+            <li><a href="pages/projet.html">Nos projets</a></li>
             <li><a href="#">Notre équipe</a></li>
             <li><a href="#">Agence web Congo</a></li>
-            <li><a href="#">website et app pour resto</a></li>
           </ul>
           </ul>
         </div>
@@ -2339,7 +2456,7 @@
                 </svg>
               </div>
               <div class="contact-text">
-                <a href="contact.html">mpouckaffaires@gmail.com</a>
+                <a href="contact.html"><span class="__cf_email__" data-cfemail="7c110c13091f171d1a1a1d150e190f3c1b111d1510521f1311">[email&#160;protected]</span></a>
               </div>
             </div>
             <div class="contact-item">
@@ -2360,7 +2477,7 @@
       <!-- Barre inférieure -->
       <div class="footer-bottom">
         <!-- [CONFIG] -->
-        <p class="footer-copy">© 2026 MPOUCK. Tous droits réservés.</p>
+        <p class="footer-copy">© 2026 CSRCD. Tous droits réservés.</p>
         <nav class="footer-legal" aria-label="Liens légaux">
           <a href="#">Conditions d'utilisation</a>
           <a href="#">Politiques de confidentialité</a>
@@ -2374,7 +2491,7 @@
   <!-- ══════════════════════════════════════════
        SCRIPTS
   ══════════════════════════════════════════ -->
-  <script>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
     /* ── Thème (partagé navbar + footer) ── */
     const html = document.documentElement;
     const KEY  = 'mpouck-theme';
@@ -2478,7 +2595,7 @@
     type: 'Page',
     icon: '🏠',
     title: 'Accueil',
-    desc: 'Page d accueil MPOUCK - solutions numeriques pour entrepreneurs.',
+    desc: 'Page d accueil Centre special de recherche et de creation digitale.',
     href: 'https://mpouckjhochadrack.github.io/',
     keywords: ['accueil', 'home', 'mpouck', 'site', 'entrepreneur']
   },
@@ -2494,16 +2611,16 @@
     type: 'Page',
     icon: 'ℹ️',
     title: 'À propos',
-    desc: 'Presentation de MPOUCK, vision, expertise et mission.',
+    desc: 'Presentation du CSRCD, vision, expertise et mission.',
     href: '#',
-    keywords: ['about', 'a propos', 'presentation', 'mpouck', 'expertise']
+    keywords: ['about', 'a propos', 'presentation', 'CSRCD', 'expertise']
   },
   {
     type: 'Page',
     icon: '📁',
     title: 'Projets',
     desc: 'Decouvrez quelques projets et realisations numeriques.',
-    href: '#',
+    href: 'pages/projet.html',
     keywords: ['projets', 'portfolio', 'realisations', 'travaux']
   },
   {
@@ -2527,7 +2644,7 @@
     icon: '✉️',
     title: 'Contact',
     desc: 'Contactez-nous pour toute demande de collaboration.',
-    href: 'https://mpouck.github.io/contact.html',
+    href: 'https://mpouckjhochadrack.github.io/contact.html',
     keywords: ['contact', 'email', 'devis', 'collaboration']
   }
 ];
@@ -2664,16 +2781,4 @@
       var html = '';
       Object.keys(groups).forEach(function(label) {
         html += '<div class="search-group-label">' + label + 's</div>';
-        groups[label].forEach(function(d) { html += itemHTML(d, q); });
-      });
-      html += footerHTML(hits.length);
-      searchResults.innerHTML = html;
-      focusedIdx = -1;
-      bindItems();
-    }
-
-
-
-  </script>
-</body>
-</html>
+        groups[label].forEach(fu
