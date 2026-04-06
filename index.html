@@ -7,7 +7,7 @@
   
   <link rel="canonical" href="https://mpouckjhochadrack.github.io/">
   
-<meta property="og:title" content="Centre spécial  de recherche et de création digitale">
+<meta property="og:title" content="Centre spécial de recherche et de création digitale">
 
 <meta property="og:description" content="Bienvenue sur CSRCD, un espace personnel dédié aux projets web, à la recherche, à l’innovation digitale, au contenu et aux expérimentations créatives.">
 
@@ -1632,7 +1632,7 @@
 
       <!-- [CONFIG] Liens desktop -->
       <ul class="nav-links" role="list">
-        <li><a href="#hero">Acceuil</a></li>
+        <li><a href="#hero">Accueil</a></li>
         <li><a href="#">Services</a></li>
 
         <li class="nav-has-dropdown" id="deskPages">
@@ -1690,7 +1690,7 @@
     <!-- Menu mobile -->
     <div class="mobile-menu" id="mobileMenu" aria-hidden="true" role="menu">
       <ul>
-        <li><a href="#hero"    role="menuitem">Acceuil</a></li>
+        <li><a href="#hero"    role="menuitem">Accueil</a></li>
         <li><a href="#" role="menuitem">Services</a></li>
         <li class="mobile-has-sub" id="mobPages">
           <button class="mob-sub-trigger" id="mobPagesTrigger" aria-expanded="false">
@@ -1704,9 +1704,9 @@
               
               <a href="#"     class="mob-sublink" role="menuitem"><span class="page-icon">👤</span> A propos</a>
               
-              <a href="#" class="mob-sublink" role="menuitem"><span class="page-icon">🖼️</span> Galerie 
+              <a href="#" class="mob-sublink" role="menuitem"><span class="page-icon">🖼️</span> Galerie</a>
               
-              <a href="#blog"      class="mob-sublink" role="menuitem"><span class="page-icon">✍️</span>  Blog</a>
+              <a href="#blog" class="mob-sublink" role="menuitem"><span class="page-icon">✍️</span> Blog</a>
               
               <!-- <a href="contact.html"   class="mob-sublink" role="menuitem"><span class="page-icon">✉️</span> Contact</a> -->
             </div>
@@ -2407,14 +2407,13 @@
         <!-- Col 2 : Quick Links -->
         <!-- [CONFIG] -->
         <div class="footer-col">
-          <h3>Liens rapides</h3>
+          <h4>Liens rapides</h4>
           <ul>
             <li><a href="#">À propos de nous</a></li>
             <li><a href="#">Nos Services</a></li>
             <li><a href="pages/projet.html">Nos projets</a></li>
             <li><a href="#">Notre équipe</a></li>
             <li><a href="#">Agence web Congo</a></li>
-          </ul>
           </ul>
         </div>
 
@@ -2781,4 +2780,13 @@
       var html = '';
       Object.keys(groups).forEach(function(label) {
         html += '<div class="search-group-label">' + label + 's</div>';
-        groups[label].forEach(fu
+        groups[label].forEach(function(d) { html += itemHTML(d, q); });
+      });
+      html += footerHTML(hits.length);
+      searchResults.innerHTML = html;
+      bindItems();
+    }
+
+  </script>
+</body>
+</html>
