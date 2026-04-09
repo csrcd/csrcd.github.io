@@ -4,19 +4,77 @@
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Blog — centre spécial de recherche et de création digitale</title>
-  
-      <!-- Meta description pour SEO -->
- <meta name="description" content="Créez, lancez et développez votre business en ligne avec les solutions digitales innovantes de MPOUCK. Plus de 4 800 entrepreneurs nous font confiance.">
- 
-  <meta name="keywords" content="MPOUCK, solutions digitales, business en ligne, templates, formation IA, articles de blog">
-  
+  <title>Blog — Design, IA & Entrepreneuriat Numérique | CSRCD</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Articles pratiques sur le design UI/UX, l'intelligence artificielle, le business en ligne et le numérique. Ressources et conseils par CSRCD pour entrepreneurs.">
+  <meta name="keywords" content="MPOUCK, CSRCD, design UI UX, formation IA, business numérique, templates web, SEO, entrepreneuriat, blog">
+  <link rel="canonical" href="https://csrcd.github.io/blog.html" />
+
+  <!-- Open Graph (partage réseaux sociaux) -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://csrcd.github.io/blog.html" />
+  <meta property="og:title"       content="Blog CSRCD — Design, IA & Entrepreneuriat Numérique" />
+  <meta property="og:description" content="Articles pratiques sur le design UI/UX, l'IA, le business en ligne et le numérique. Ressources et conseils pour entrepreneurs." />
+  <meta property="og:image"       content="https://csrcd.github.io/og-blog.png" />
+  <meta property="og:locale"      content="fr_FR" />
+  <meta property="og:site_name"   content="CSRCD" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="Blog CSRCD — Design, IA & Entrepreneuriat Numérique" />
+  <meta name="twitter:description" content="Articles pratiques sur le design, l'IA et le business numérique." />
+  <meta name="twitter:image"       content="https://csrcd.github.io/og-blog.png" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400;1,9..40,500&display=swap" rel="stylesheet" />
   
   <link rel="icon" type="image/png" href="favicon.png">
   
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NEZEG2STZF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NEZEG2STZF');
+</script>
+
+  <!-- Structured Data JSON-LD (indexation Google) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Blog CSRCD",
+    "description": "Articles sur le design UI/UX, l'intelligence artificielle et l'entrepreneuriat numérique.",
+    "url": "https://csrcd.github.io/blog.html",
+    "publisher": {
+      "@type": "Organization",
+      "name": "CSRCD",
+      "url": "https://csrcd.github.io/",
+      "logo": { "@type": "ImageObject", "url": "https://csrcd.github.io/favicon.png" }
+    },
+    "blogPost": [
+      {
+        "@type": "BlogPosting",
+        "headline": "Les tendances UI/UX qui vont dominer 2026",
+        "datePublished": "2026-03-01",
+        "author": { "@type": "Person", "name": "MPOUCK Jho Chadrack" },
+        "url": "https://csrcd.github.io/article-uiux-2026.html",
+        "image": "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=900&q=85&fit=crop"
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "Comment Rédiger une Dissertation Française Réussie en 2026",
+        "datePublished": "2026-03-28",
+        "author": { "@type": "Person", "name": "MPOUCK Jho Chadrack" },
+        "url": "https://csrcd.github.io/article-dissertation-francaise-2026.html"
+      }
+    ]
+  }
+  </script>
 
 
   <style>
@@ -623,7 +681,7 @@
     }
     .footer-card {
       max-width: 1100px; margin: 0 auto;
-      background: var(--bg-nav); border-radius: 28px 28px 0 0;
+      background: #0d1b2a; border-radius: 28px 28px 0 0;
       border: 1px solid var(--border-nav); border-bottom: none;
       padding: 52px 52px 0;
       transition: background .35s ease, border-color .35s ease;
@@ -643,10 +701,10 @@
     }
     .footer-logo-name {
       font-size: 1.1rem; font-weight: 800; letter-spacing: -.04em;
-      color: var(--text-dark); transition: color .35s ease;
+      color: white; transition: color .35s ease;
     }
     .footer-desc {
-      font-size: .82rem; color: var(--text-muted); line-height: 1.7;
+      font-size: .82rem; color: white; line-height: 1.7;
       max-width: 260px; margin-bottom: 20px; transition: color .35s ease;
     }
     .footer-socials { display: flex; gap: 8px; }
@@ -658,7 +716,7 @@
       transition: background var(--ease), color var(--ease), border-color var(--ease);
     }
     .social-link:hover { background: var(--social-bg-h); color: var(--text-dark); }
-    .footer-col h4 {
+    .footer-col h4, .footer-col h3 {
       font-size: .72rem; font-weight: 700; letter-spacing: .1em;
       text-transform: uppercase; color: var(--text-sub);
       margin-bottom: 16px; transition: color .35s ease;
@@ -729,9 +787,9 @@
   ══════════════════════════════════════════ -->
   <nav class="nav-wrapper" id="mainNav" role="navigation" aria-label="Navigation principale">
     <div class="navbar">
-      <a href="index.html" class="nav-logo">CSRCD</a>
+      <a href="https://csrcd.github.io/" class="nav-logo">CSRCD</a>
       <ul class="nav-links" role="list">
-        <li><a href="index.html">Acceuil</a></li>
+        <li><a href="https://csrcd.github.io/">Accueil</a></li>
         <li><a href="services.html">Services</a></li>
         <li class="nav-has-dropdown" id="deskPages">
           <button class="nav-drop-btn" id="pagesTrigger" aria-haspopup="true" aria-expanded="false">
@@ -748,7 +806,7 @@
          <!--   <a href="/contact"   role="menuitem"><span class="page-icon">✉️</span> Contact</a> -->
           </div>
         </li>
-        <li><a href=".html">Templates</a></li>
+        <li><a href="Webtemplates.html">Templates</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
       <div class="nav-right">
@@ -771,7 +829,7 @@
             </svg>
           </span>
         </button>
-        <a href="projet.httml" class="nav-cta">Nos projets</a>
+        <a href="projet.html" class="nav-cta">Nos projets</a>
         <button class="hamburger" id="hamburger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobileMenu">
           <span></span><span></span><span></span>
         </button>
@@ -779,7 +837,7 @@
     </div>
     <div class="mobile-menu" id="mobileMenu" aria-hidden="true" role="menu">
       <ul>
-        <li><a href="index.html" role="menuitem">Accueil</a></li>
+        <li><a href="https://csrcd.github.io/" role="menuitem">Accueil</a></li>
         <li><a href="services.html" role="menuitem">Services</a></li>
         <li class="mobile-has-sub" id="mobPages">
           <button class="mob-sub-trigger" id="mobPagesTrigger" aria-expanded="false">
@@ -811,14 +869,14 @@
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
         <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
       </svg>
-      <input type="text" id="searchInput" class="search-input" placeholder="Rechercher un article, service, page…" autocomplete="off" spellcheck="false"/>
+      <input type="text" id="searchInput" class="search-input" placeholder="Rechercher un article, service, page…" autocomplete="off" spellcheck="false" aria-label="Recherche" aria-autocomplete="list" aria-controls="searchResults"/>
       <button id="searchClose" class="search-close-btn" aria-label="Fermer">
         <svg width="12" height="12" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
           <line x1="1" y1="1" x2="13" y2="13"/><line x1="13" y1="1" x2="1" y2="13"/>
         </svg>
       </button>
     </div>
-    <div class="search-results" id="searchResults" role="listbox"></div>
+    <div class="search-results" id="searchResults" role="listbox" aria-label="Résultats de recherche"></div>
   </div>
 
   <!-- ══════════════════════════════════════════
@@ -833,17 +891,15 @@
   </section>
 
   <!-- FILTRES -->
-  <div class="blog-filters" id="blogFilters">
-    <button class="filter-btn active" data-filter="all">Tous</button>
-    <button class="filter-btn" data-filter="design">Design</button>
-    <button class="filter-btn" data-filter="website">Website</button>
-    
-    
-    <button class="filter-btn" data-filter="ia">Intelligence Artificielle</button>
-    <button class="filter-btn" data-filter="finance">Finance</button>
-    <button class="filter-btn" data-filter="seo">SEO</button>
-    <button class="filter-btn" data-filter="outils">Outils</button>
-    <button class="filter-btn" data-filter="education">Éducation</button>
+  <div class="blog-filters" id="blogFilters" role="group" aria-label="Filtrer les articles par catégorie">
+    <button class="filter-btn active" data-filter="all"     aria-pressed="true">Tous</button>
+    <button class="filter-btn" data-filter="design"          aria-pressed="false">Design</button>
+    <button class="filter-btn" data-filter="website"         aria-pressed="false">Website</button>
+    <button class="filter-btn" data-filter="ia"              aria-pressed="false">Intelligence Artificielle</button>
+    <button class="filter-btn" data-filter="finance"         aria-pressed="false">Finance</button>
+    <button class="filter-btn" data-filter="seo"             aria-pressed="false">SEO</button>
+    <button class="filter-btn" data-filter="outils"          aria-pressed="false">Outils</button>
+    <button class="filter-btn" data-filter="education"       aria-pressed="false">Éducation</button>
   </div>
 
   <!-- ══════════════════════════════════════════
@@ -854,9 +910,12 @@
       <div class="featured-img-wrap">
         <img
           src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=900&q=85&fit=crop"
-          alt="Tendances UI UX 2025"
+          alt="Illustration tendances UI UX 2026 — minimalisme, bento grids et interfaces IA"
           class="featured-img"
+          width="900" height="600"
           loading="eager"
+          fetchpriority="high"
+          decoding="async"
         />
       </div>
       <div class="featured-body">
@@ -892,7 +951,7 @@
                    <!-- Article -->
     <article class="blog-card" data-category="education">
         <div class="blog-card-img-wrap">
-          <img src="dissertation.jpeg" alt="Comment Rédiger une Dissertation Française Réussie en 2026:La dissertation française terrifie des milliers d'élèves chaque année — pourtant, c'est un exercice qui repose sur une méthode précise et reproductible. Ce guide vous accompagne pas à pas : de l'analyse du sujet à la conclusion, en passant par le choix du plan, la construction des arguments et les erreurs fatales à éviter le jour de l'examen." class="blog-card-img" loading="lazy"/>
+          <img src="dissertation.jpeg" alt="Illustration : méthode pour rédiger une dissertation française réussie" class="blog-card-img" loading="lazy"/>
         </div>
         <div class="blog-card-body">
           <span class="article-badge">Éducation</span>
@@ -937,11 +996,11 @@
     <div class="footer-card">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a href="index.html" class="footer-logo" aria-label="Accueil MPOUCK">
-            <img src="favicon.png" alt="MPOUCK logo" class="footer-logo-img" width="40" height="40"/>
-            <span class="footer-logo-name">MPOUCK</span>
+          <a href="https://csrcd.github.io/" class="footer-logo" aria-label="Accueil CSRCD">
+            <img src="../images/image2.png" alt="CSRCD logo" class="footer-logo-img" width="40" height="40"/>
+            <span class="footer-logo-name">CSRCD</span>
           </a>
-          <p class="footer-desc">Depuis 2026, nous transformons les entreprises grâce à des solutions innovantes et accompagnons leur croissance efficace et durable..</p>
+          <p class="footer-desc">Centre spécial de recherche et de création digitale.</p>
           <div class="footer-socials" role="list">
             <a href="#" class="social-link" role="listitem" aria-label="Facebook">
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
@@ -958,12 +1017,12 @@
           </div>
         </div>
         <div class="footer-col">
-          <h3>Liens Rapides</h4>
+          <h3>Liens Rapides</h3>
           <ul>
             <li><a href="about.html">A propos</a></li>
             <li><a href="services.html">Nos Services</a></li>
             <li><a href="projet.html">Nos projets</a></li>
-            <li><a href="index.html#testimonials">Témoignages</a></li>
+            <li><a href="https://csrcd.github.io/#testimonials">Témoignages</a></li>
             <li><a href="about.html#team-ssection">Notre équipe</a></li>
           <!--  <li><a href="/careers">Careers</a></li> -->
           </ul>
@@ -992,7 +1051,7 @@
               <div class="contact-icon">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
               </div>
-              <div class="contact-text"><a href="contact.html"><span class="__cf_email__" data-cfemail="bbd6cbd4ced8d0dadddddad2c9dec8fbdcd6dad2d795d8d4d6"><span class="__cf_email__" data-cfemail="9af7eaf5eff9f1fbfcfcfbf3e8ffe9dafdf7fbf3f6b4f9f5f7">mpouckaffaires@gmail.com</span></span></a></div>
+              <div class="contact-text"><a href="contact.html"><span class="__cf_email__" data-cfemail="bbd6cbd4ced8d0dadddddad2c9dec8fbdcd6dad2d795d8d4d6"><span class="__cf_email__" data-cfemail="9af7eaf5eff9f1fbfcfcfbf3e8ffe9dafdf7fbf3f6b4f9f5f7"><span class="__cf_email__" data-cfemail="076a776872646c666161666e75627447606a666e6b2964686a">[email&#160;protected]</span></span></span></a></div>
             </div>
             <div class="contact-item">
               <div class="contact-icon">
@@ -1161,8 +1220,12 @@
     document.getElementById('blogFilters').addEventListener('click', function(e) {
       var btn = e.target.closest('.filter-btn');
       if (!btn) return;
-      document.querySelectorAll('.filter-btn').forEach(function(b) { b.classList.remove('active'); });
+      document.querySelectorAll('.filter-btn').forEach(function(b) {
+        b.classList.remove('active');
+        b.setAttribute('aria-pressed', 'false');
+      });
       btn.classList.add('active');
+      btn.setAttribute('aria-pressed', 'true');
       activeFilter = btn.dataset.filter;
       renderPage(1);
     });
@@ -1181,13 +1244,13 @@
   // =========================
   // PAGES PRINCIPALES
   // =========================
-  { type:'Page', icon:'\uD83C\uDFE0', title:'Accueil', desc:'Page accueil MPOUCK - solutions numeriques pour entrepreneurs.', href:'https://mpouck.github.io/' },
-  { type:'Page', icon:'\u26A1', title:'Services', desc:'Nos services : templates web, design graphique, formations IA.', href:'https://mpouck.github.io/services.html' },
-  { type:'Page', icon:'\u2139\uFE0F', title:'A propos', desc:'Presentation de MPOUCK, sa vision et son expertise.', href:'https://mpouck.github.io/about.html' },
-  { type:'Page', icon:'\uD83D\uDCC1', title:'Projets', desc:'Decouvrez les projets et realisation!s numeriques MPOUCK.', href:'https://mpouck.github.io/projet.html' },
-  { type:'Page', icon:'\uD83D\uDCF0', title:'Blog', desc:'Articles sur le design, IA, entrepreneuriat et numerique.', href:'https://mpouck.github.io/blog.html' },
-  { type:'Page', icon:'\uD83D\uDCE7', title:'Newsletter', desc:'Abonnez-vous pour recevoir ressources et conseils.', href:'https://mpouck.github.io/#newsletter' },
-  { type:'Page', icon:'\u2709\uFE0F', title:'Contact', desc:'Contactez-nous pour toute demande de collaboration.', href:'https://mpouck.github.io/contact.html' },
+  { type:'Page', icon:'\uD83C\uDFE0', title:'Accueil', desc:'Page accueil CSRCD.', href:'https://csrcd.github.io/' },
+  { type:'Page', icon:'\u26A1', title:'Services', desc:'Nos services : templates web, design graphique, formations IA.', href:'https://csrcd.github.io/services.html' },
+  { type:'Page', icon:'\u2139\uFE0F', title:'A propos', desc:'Presentation du , sa vision et son expertise.', href:'https://csrcd.github.io/about.html' },
+  { type:'Page', icon:'\uD83D\uDCC1', title:'Projets', desc:'Découvrez les projets et réalisations numériques MPOUCK.', href:'https://csrcd.github.io/projet.html' },
+  { type:'Page', icon:'\uD83D\uDCF0', title:'Blog', desc:'Articles sur le design, IA, entrepreneuriat et numerique.', href:'https://csrcd.github.io/blog.html' },
+  { type:'Page', icon:'\uD83D\uDCE7', title:'Newsletter', desc:'Abonnez-vous pour recevoir ressources et conseils.', href:'https://csrcd.github.io/#newsletter' },
+  { type:'Page', icon:'\u2709\uFE0F', title:'Contact', desc:'Contactez-nous pour toute demande de collaboration.', href:'https://csrcd.github.io/contact.html' },
 ];
 
     var searchBtn     = document.getElementById('searchBtn');
@@ -1290,7 +1353,10 @@
         if (!items.length) return;
         if (e.key === 'ArrowDown') { e.preventDefault(); focusedIdx = Math.min(focusedIdx+1, items.length-1); updateFocus(); }
         if (e.key === 'ArrowUp')   { e.preventDefault(); focusedIdx = Math.max(focusedIdx-1, 0); updateFocus(); }
-        if (e.key === 'Enter' && focusedIdx >= 0) { items[focusedIdx].click(); }
+        if (e.key === 'Enter') {
+          var focused = document.querySelector('.search-item.focused');
+          if (focused) { focused.click(); }
+        }
       });
     }
 
